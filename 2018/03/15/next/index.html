@@ -101,7 +101,7 @@
 <meta property="og:site_name" content="赵仲恺">
 <meta property="og:description" content="修改头像设置菜单栏头像把头像0.jpg图片放在themes\next\source\images中在站点设置文件_config.yml，修改字段 avatar # 设置头像 avatar: /images/0.jpg 主页文章添加阴影效果打开\themes\next\source\css_custom\custom.styl,向里面加入：     // 主页文章添加阴影效果     .post {">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-15T15:12:46.137Z">
+<meta property="og:updated_time" content="2018-03-15T15:19:14.880Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Next主题设置">
 <meta name="twitter:description" content="修改头像设置菜单栏头像把头像0.jpg图片放在themes\next\source\images中在站点设置文件_config.yml，修改字段 avatar # 设置头像 avatar: /images/0.jpg 主页文章添加阴影效果打开\themes\next\source\css_custom\custom.styl,向里面加入：     // 主页文章添加阴影效果     .post {">
@@ -392,7 +392,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  110 字
+                  227 字
                 </span>
               
 
@@ -433,6 +433,10 @@
 <pre><code># 设置头像
 avatar: /images/0.jpg
 </code></pre><h2 id="主页文章添加阴影效果"><a href="#主页文章添加阴影效果" class="headerlink" title="主页文章添加阴影效果"></a>主页文章添加阴影效果</h2><p>打开\themes\next\source\css_custom\custom.styl,向里面加入：<br>     // 主页文章添加阴影效果<br>     .post {<br>        margin-top: 60px;<br>        margin-bottom: 60px;<br>        padding: 25px;<br>        -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);<br>        -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);<br>     }</p>
+<h2 id="阅读全文设置"><a href="#阅读全文设置" class="headerlink" title="阅读全文设置"></a>阅读全文设置</h2><p>要解决这个问题的方法：是修改_config.yml 文件设置，而是直接在你的md 中加一句代码即可：用文本编辑器打开 themes/next 目录下的 _config.yml 文件，找到这段代码：</p>
+<p>  Automatically Excerpt. Not recommend.<br>  Please use <a id="more"></a> in the post to control excerpt accurately.<br>  auto_excerpt:<br>    enable: false<br>    length: 150</p>
+<p>把 enable 的 false 改成 true 就行了，然后 length 是设定文章预览的文本长度。</p>
+<p>修改后重启 hexo 就ok了。</p>
 
       
     </div>
@@ -695,7 +699,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改头像"><span class="nav-number">1.</span> <span class="nav-text">修改头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主页文章添加阴影效果"><span class="nav-number">2.</span> <span class="nav-text">主页文章添加阴影效果</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#修改头像"><span class="nav-number">1.</span> <span class="nav-text">修改头像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#主页文章添加阴影效果"><span class="nav-number">2.</span> <span class="nav-text">主页文章添加阴影效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#阅读全文设置"><span class="nav-number">3.</span> <span class="nav-text">阅读全文设置</span></a></li></ol></div>
             
 
           </div>
@@ -739,7 +743,7 @@ var jiathis_config={
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">181</span>
+    <span title="Site words total count">298</span>
   
 </div>
 
